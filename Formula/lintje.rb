@@ -1,7 +1,7 @@
 class Lintje < Formula
   desc "An opinionated linter for Git"
   homepage "https://github.com/tombruijn/lintje"
-  version "0.3.1"
+  version "0.4.0"
   if Hardware::CPU.arm?
     url "https://github.com/tombruijn/lintje/releases/download/v0.4.0/aarch64-apple-darwin.tar.gz"
     sha256 "5272185a1b6e46877f3de402bf449226b167555a13d949ded1b6057bc39e4b3e"
