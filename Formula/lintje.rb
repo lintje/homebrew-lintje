@@ -3,11 +3,11 @@ class Lintje < Formula
   homepage "https://github.com/tombruijn/lintje"
   version "0.3.1"
   if Hardware::CPU.arm?
-    url "https://github.com/tombruijn/lintje/releases/download/v0.3.1/aarch64-apple-darwin.tar.gz"
-    sha256 "72a7f41cc3da903b85ab95ed1d777c86ed695b98b67e2b5281dddb936c5aa267"
+    url "https://github.com/tombruijn/lintje/releases/download/v0.4.0/aarch64-apple-darwin.tar.gz"
+    sha256 "5272185a1b6e46877f3de402bf449226b167555a13d949ded1b6057bc39e4b3e"
   else
-    url "https://github.com/tombruijn/lintje/releases/download/v0.3.1/x86_64-apple-darwin.tar.gz"
-    sha256 "aa308f8d9441970f02ff331eec2c0f0cb28bb4f7c565ac2dbdcb58e0050a50c7"
+    url "https://github.com/tombruijn/lintje/releases/download/v0.4.0/x86_64-apple-darwin.tar.gz"
+    sha256 "bcd93ef9ce07840d4128ce0658cc21af594576495a316e040c505cc2446d4fa5"
   end
   license "MIT"
 
