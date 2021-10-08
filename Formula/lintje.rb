@@ -1,13 +1,13 @@
 class Lintje < Formula
   desc "An opinionated linter for Git"
   homepage "https://github.com/tombruijn/lintje"
-  version "0.4.0"
+  version "0.4.1"
   if Hardware::CPU.arm?
-    url "https://github.com/tombruijn/lintje/releases/download/v0.4.0/aarch64-apple-darwin.tar.gz"
-    sha256 "5272185a1b6e46877f3de402bf449226b167555a13d949ded1b6057bc39e4b3e"
+    url "https://github.com/tombruijn/lintje/releases/download/v0.4.1/aarch64-apple-darwin.tar.gz"
+    sha256 "5c485d3b650f0ebbfc82b7402e63437ebf2ecb5c92f44a22c0b82736afbd1cb1"
   else
-    url "https://github.com/tombruijn/lintje/releases/download/v0.4.0/x86_64-apple-darwin.tar.gz"
-    sha256 "bcd93ef9ce07840d4128ce0658cc21af594576495a316e040c505cc2446d4fa5"
+    url "https://github.com/tombruijn/lintje/releases/download/v0.4.1/x86_64-apple-darwin.tar.gz"
+    sha256 "5e4b262f7a9c070effe011ffb8bc64a1b118dbaafed0fc7afe6bb986ab0afa11"
   end
   license "MIT"
 
