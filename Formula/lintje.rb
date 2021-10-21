@@ -11,8 +11,6 @@ class Lintje < Formula
   end
   license "MIT"
 
-  bottle :unneeded
-
   def install
     bin.install "lintje"
   end
