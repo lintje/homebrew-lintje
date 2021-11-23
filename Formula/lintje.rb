@@ -1,5 +1,5 @@
 class Lintje < Formula
-  desc "An opinionated linter for Git"
+  desc "Opinionated linter for Git"
   homepage "https://github.com/tombruijn/lintje"
   version "0.6.0"
   if Hardware::CPU.arm?
