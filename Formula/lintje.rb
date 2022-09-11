@@ -1,20 +1,21 @@
 class Lintje < Formula
   desc "Opinionated linter for Git"
   homepage "https://lintje.dev"
-  version "0.10.0"
+  package_version = "v0.11.0"
+  version package_version
   license "MIT"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/lintje/lintje/releases/download/v0.10.0/aarch64-apple-darwin.tar.gz"
-    sha256 "13c0e362fbbbd5ca6dd4b4d6fe5ee75cf243c1cdd98051e245c6672958f233c1"
+    url "https://github.com/lintje/lintje/releases/download/#{package_version}/aarch64-apple-darwin.tar.gz"
+    sha256 "6abdb824d55f0293787fe0f16f0fcfa7885aaa7ceae7b801e9e4699b16449c97"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/lintje/lintje/releases/download/v0.10.0/x86_64-apple-darwin.tar.gz"
-    sha256 "a774f0fc10fef3c7f5bd1d9b60c7a2c98b80fa811a79de6740b757ea5c43fb21"
+    url "https://github.com/lintje/lintje/releases/download/#{package_version}/x86_64-apple-darwin.tar.gz"
+    sha256 "3adc7a3244fc206afa86df1df2dadaaec8635784418a779ae8739514a6640587"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/tombruijn/lintje/releases/download/v0.10.0/aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "8b3478e228debf1e28bc2412c7c7c4df056c0f2c3205e9e7c6308e25493f4d97"
+    url "https://github.com/tombruijn/lintje/releases/download/#{package_version}/aarch64-unknown-linux-gnu.tar.gz"
+    sha256 "d6e5146b444c756fb970d485d5bc2f3c3dbb639dc18f63661c816532c9ff1fab"
   else
-    url "https://github.com/lintje/lintje/releases/download/v0.10.0/x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "853a46023124e2ab9e112ab9250d0220ed7a6ee14e15da851159c0f7a7404c21"
+    url "https://github.com/lintje/lintje/releases/download/#{package_version}/x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "3d2c49413f1408e1d3fa58f952f15c97a6c3120f909427c16f10169237f9e23c"
   end
 
   def install
